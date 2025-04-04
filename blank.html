@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-100">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind + Alpine Block UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="h-full">
+
+    <div class="min-h-full" x-data="{ mobileMenuOpen: false, userMenuOpen: false }">
+
+        <div data-include="components/app/nav.html"></div>
+
+        <main>
+
+            <!-- CONTENT -->
+
+            <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+
+
+            </div>
+
+            <div data-include="components/app/footer.html"></div>
+
+        </main>
+    </div>
+
+    <script src="assets/js/includes.js"></script>
+
+</body>
+
+</html>
